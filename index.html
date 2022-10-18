@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
@@ -18,9 +30,9 @@
       </div>
       <ul class="nav-menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
+        <li><a href="https://bit.ly/3EQ6v3t" target="_blank">Resume</a></li>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -30,12 +42,19 @@
     </nav>
     <main id="home">
       <div class="context">
-        <h1 class="hero-heading">HELLO, I AM RACHEL ISAAC</h1>
-        <h3 class="hero-paragraph">
-          I develop the frontend of websites and web applications as an expert
-          frontend web developer, ensuring the success of the final product and
-          the company as a whole.
-        </h3>
+        <div class="hero-content">
+          <h1 class="hero-heading">HELLO, I AM RACHEL ISAAC</h1>
+          <h3 class="hero-paragraph">
+            I develop the frontend of websites and web applications as an expert
+            frontend web developer, ensuring the success of the final product
+            and the company as a whole.
+          </h3>
+        </div>
+        <img
+          class="bg-image"
+          src="./Images/background-image.jpg"
+          alt="building blocks"
+        />
       </div>
       <div class="area">
         <ul class="circles">
@@ -52,6 +71,66 @@
         </ul>
       </div>
     </main>
+    <section class="project-container">
+      <h1 class="project-heading">
+        My Creative <span class="animate-character">Portfolio</span> Section
+      </h1>
+      <div class="images-container">
+        <div class="images first-image">
+          <img class="image-1" src="./Images/tindog-website.png" alt="" />
+          <p class="animate-character tech-stack">HTML & CSS</p>
+          <div class="icons">
+            <a href=""><i class="bi bi-eye"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+        <div class="images second-image">
+          <img class="image-2" src="./Images/dropdown navigation.png" alt="" />
+          <p class="animate-character tech-stack">HTML CSS & JAVASCRIPT</p>
+          <div class="icons">
+            <a href=""><i class="bi bi-eye"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <div class="images third-image">
+          <img class="image-3" src="./Images/React-calculator.png" alt="" />
+          <p class="animate-character tech-stack">REACT JS</p>
+          <div class="icons">
+            <a href=""><i class="bi bi-eye"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+        <div class="images fourth-image">
+          <img
+            class="image-4"
+            src="./Images/interactive-rating-component.png"
+            alt=""
+          />
+          <p class="animate-character tech-stack">HTML CSS & JAVASCRIPT</p>
+          <div class="icons">
+            <a href=""><i class="bi bi-eye"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+        <div class="images fifth-image">
+          <img class="image-5" src="./Images/surprise kitchen 1.png" alt="" />
+          <p class="animate-character tech-stack">REACT JS</p>
+          <div class="icons">
+            <a href=""><i class="bi bi-eye"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+        <div class="images sixth-image">
+          <img class="image-6" src="./Images/guess-game-win.png" alt="" />
+          <p class="animate-character tech-stack">HTML CSS & JAVASCRIPT</p>
+          <div class="icons">
+            <a href=""><i class="bi bi-eye"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

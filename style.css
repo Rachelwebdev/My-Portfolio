@@ -1,17 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* CSS ANIMATION BACKGROUND */
-.context {
-  width: 100%;
-  position: absolute;
-  top: 40vh;
-  color: black;
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* *****************
+-----------------
+NAVIGATION BAR
+_________________
+ ***************** */
+.navbar {
+  border-bottom: 1.5px solid #eba858;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #eba858;
 }
 
+.logo-text {
+  color: #eba858;
+  background-color: black;
+  text-align: center;
+  margin-left: 2rem;
+  padding: 6px 15px;
+  border-radius: 2rem;
+}
+.logo-text:hover {
+  background-color: #eba858;
+  color: black;
+  cursor: pointer;
+  padding: 10px 18px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: 0;
+  padding: 0 2rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(11, 11, 11);
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover {
+  color: #eba858;
+  background-color: black;
+  margin: 1.5rem;
+  border-radius: 2rem;
+}
+.nav-menu {
+  z-index: 1;
+}
+
+/* *****************
+-----------------
+HAMBURGER MENU
+_________________
+ ***************** */
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+/* *****************
+-----------------
+ANIMATION BACKGROUND
+_________________
+ ***************** */
+.context {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  color: #3c3e3d;
+  display: flex;
+}
+.hero-content {
+  margin-top: 6rem;
+  width: 70%;
+  z-index: 1;
+}
+.bg-image {
+  width: 20%;
+  /* height: 100%; */
+}
 .context h1 {
   text-align: center;
   font-size: 50px;
@@ -21,11 +127,12 @@
   margin: 0 auto;
   width: 60%;
   font-size: 30px;
+  font-weight: 400;
 }
 .area {
   background-color: white;
   width: 100%;
-  height: 100vh;
+  height: 75vh;
 }
 
 .circles {
@@ -43,7 +150,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgb(181, 155, 7);
+  background: #c27b2b;
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
@@ -140,91 +247,111 @@
   }
 }
 
-/* NAVBAR */
-.navbar {
-  border-bottom: 1.5px solid rgb(181, 155, 7);
-}
-.logo-section {
-  display: flex;
-  align-items: center;
-}
-.logo {
-  width: 60px;
-  border-radius: 50%;
-  border: 1px solid rgb(181, 155, 7);
-}
+/* *****************
+-----------------
+PROJECT SECTION
+_________________
+ ***************** */
 
-.logo-text {
-  color: rgb(181, 155, 7);
-  background-color: black;
+.project-container {
+  /* height: 250vh; */
   text-align: center;
-  margin-left: 2rem;
-  padding: 6px 15px;
-  border-radius: 2rem;
+  margin-top: 5rem;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  background-color: rgb(0, 0, 0);
 }
-.logo-text:hover {
-  background-color: rgb(181, 155, 7);
-  color: black;
-  cursor: pointer;
-  padding: 10px 18px;
+.project-heading {
+  margin-bottom: 5rem;
+  color: whitesmoke;
+  padding-top: 3rem;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.5);
-  position: relative;
-  top: 0;
-  padding: 0 2rem;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  margin: 20px 0px;
-}
-
-.navbar ul li {
-  font-family: century;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: rgb(11, 11, 11);
-  padding: 8px 25px;
-  transition: all 0.5s ease;
+.animate-character {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #210d68 0,
+    #5835d3 15%,
+    #6711c2 29%,
+    #ff1361 67%,
+    #eba858 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  font-size: 2rem;
 }
 
-.navbar ul li a:hover {
-  color: rgb(181, 155, 7);
-  background-color: black;
-  margin: 1.5rem;
-  border-radius: 2rem;
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
-.nav-menu {
-  z-index: 1;
+.images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.image-1 {
+  width: 300px;
+  height: 300px;
+}
+.image-2 {
+  width: 300px;
+  height: 300px;
+}
+.image-3 {
+  width: 300px;
+  height: 300px;
+}
+.image-4 {
+  width: 300px;
+  height: 300px;
+}
+.image-5 {
+  width: 300px;
+  height: 300px;
+}
+.image-6 {
+  width: 300px;
+  height: 300px;
+}
+.images {
+  margin-bottom: 5rem;
+}
+.tech-stack {
+  font-size: 1.3rem;
+}
+.icons {
+  margin-top: 1rem;
+}
+.bi {
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #f8b96d;
+  opacity: 0.5;
+}
+.bi-eye {
+  margin-right: 1.5rem;
 }
 
-/* HAMBURGER MENU */
-.hamburger {
-  display: none;
+.bi:hover {
+  /* transform: rotateY("180deg"); */
+  opacity: 1;
 }
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
-@media screen and (max-width: 768px) {
+/* *****************
+-----------------
+MEDIA QUERIES
+_________________
+ ***************** */
+/* @media screen and (max-width: 794px) {
   .nav-menu {
+    opacity: 0.9;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: -100%;
     top: 5rem;
     display: flex;
@@ -271,14 +398,14 @@
   }
 
   .navbar ul li a:hover {
-    color: rgb(181, 155, 7);
+    color: #eba858;
     background-color: black;
     margin: 2rem 5rem;
     border-radius: 2rem;
     cursor: pointer;
   }
   .context {
-    top: 30vh;
+    flex-direction: column;
   }
   .context h1 {
     font-size: 3rem;
@@ -287,4 +414,17 @@
     font-size: 1.5rem;
     width: 70%;
   }
-}
+  .bg-image {
+    width: 100%;
+    height: fit-content;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .project-container {
+    margin-top: 18rem;
+  }
+  .btn-submit {
+    display: none;
+  }
+} */
