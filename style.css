@@ -438,6 +438,9 @@ _________________
   color: #f8b96d;
   font-weight: 600;
 }
+.contact-text {
+  font-size: 3rem;
+}
 .contact-icon {
   width: 80px;
   height: 80px;
