@@ -465,7 +465,7 @@ MEDIA QUERIES
 _________________
  ***************** */
 
-@media (min-width: 320px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .nav-menu {
     opacity: 0.9;
     position: fixed;
@@ -526,6 +526,8 @@ _________________
     font-size: 2rem;
     margin-bottom: 5rem;
     margin-top: 10rem;
+    /* margin-left: 3rem; */
+    text-align: center;
   }
   .skills-images img {
     width: 100px;
@@ -541,11 +543,14 @@ _________________
   .icon-container {
     grid-template-columns: 1fr 1fr;
   }
-}
+  .area {
+    height: 180vh;
+  }
 
-@media screen and (max-width: 324px) {
-  .icon-container {
-    grid-template-columns: 1fr;
+  @media screen and (min-width: 324px) {
+    .icon-container {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
