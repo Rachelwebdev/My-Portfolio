@@ -47,6 +47,7 @@ _________________
   position: relative;
   top: 0;
   padding: 0 2rem;
+  width: 100%;
 }
 
 .navbar ul {
@@ -407,6 +408,20 @@ _________________
 }
 .email-container > a {
   font-size: 15px;
+}
+/* *****************
+-----------------
+FOOTER SECTION
+_________________
+ ***************** */
+
+.footer-container {
+  background-color: #eba858;
+  color: black;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 2rem;
+  text-align: center;
 }
 /* *****************
 -----------------
