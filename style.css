@@ -17,31 +17,31 @@ _________________
 .navbar {
   border-bottom: 1.5px solid #60bebc;
 }
-/* .logo-section {
+.logo-section {
   display: flex;
   align-items: center;
-} */
-.logo {
-  width: 100px;
-  height: 100px;
+}
+/* .logo {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 2px solid #eba858;
-}
+} */
 
-/* .logo-text {
+.logo-text {
   color: #eba858;
   background-color: black;
   text-align: center;
   margin-left: 2rem;
   padding: 6px 15px;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
 }
 .logo-text:hover {
   background-color: #eba858;
   color: black;
   cursor: pointer;
   padding: 10px 18px;
-} */
+}
 .navbar {
   display: flex;
   justify-content: space-between;
