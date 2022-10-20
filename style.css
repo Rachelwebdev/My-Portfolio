@@ -372,6 +372,8 @@ _________________
 }
 .tech-stack {
   font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 .icons {
   margin-top: 1rem;
@@ -541,7 +543,7 @@ _________________
   .skills-images img {
     width: 100px;
     height: 100px;
-    margin: 0 2rem;
+    margin: 0 2rem 2rem;
   }
   .images-container {
     grid-template-columns: 1fr;
@@ -573,5 +575,22 @@ _________________
     width: 200px;
     height: 200px;
     margin: 0 4rem;
+  }
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 305px) {
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+  .project-heading {
+    font-size: 15px;
+  }
+  .tech-stack {
+    font-size: 14px;
   }
 }
